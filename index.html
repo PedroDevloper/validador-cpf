@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Validador de CPF</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Validador de CPF</h1>
+        <p>Projeto estudante desenvolvido para verificar a validade de números de CPF.</p>
+    </header>
+
+    <main>
+        <section class="card">
+
+            <div class="icone">🛡️</div>
+
+            <h2>Verifique seu CPF</h2>
+
+            <p class="descricao">
+                Digite apenas os números, sem pontos,
+                traços ou espaços.
+            </p>
+
+            <input
+                type="text"
+                id="cpf"
+                placeholder="Digite os 11 números do CPF"
+                maxlength="11"
+                inputmode="numeric"
+            >
+
+            <button onclick="validarCPF()">
+                Validar CPF
+            </button>
+
+            <p id="resultado" aria-live="polite"></p>
+
+            <div class="info">
+                ℹ️ O CPF deve conter 11 números.
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+<p>by pedro.dev</p>
+
+</body>
+</html>
